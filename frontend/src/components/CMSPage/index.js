@@ -9,7 +9,7 @@ const CMSPage = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/heading")
+    fetch("https://abc-company-website-rk5x.onrender.com/api/heading")
       .then((res) => res.json())
       .then((data) => setHeadingText(data.text || DEFAULT_HEADING))
       .catch((err) => {
@@ -21,7 +21,7 @@ const CMSPage = () => {
   const postHeading = async (text) => {
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:8080/api/heading", {
+      const response = await fetch("https://abc-company-website-rk5x.onrender.com/api/heading", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),
