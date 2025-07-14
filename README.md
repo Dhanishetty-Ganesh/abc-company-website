@@ -1,4 +1,4 @@
-# 🧠 ABC Company - CMS Integrated AI Website
+# 🧠 ABC Company - CMS Integrated Website
 
 A pixel-perfect landing page for ABC Company powered by a dynamic CMS system to manage the main heading from a backend dashboard.
 
