@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #111;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #f59e0b;
+}

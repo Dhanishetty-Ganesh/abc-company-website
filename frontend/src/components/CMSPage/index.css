@@ -1,0 +1,138 @@
+.cms-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.cms-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #4f46e5;
+}
+
+.cms-label {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.cms-textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-family: inherit;
+  box-sizing: border-box;
+  background: #f9f9f9;
+  transition: border 0.3s ease;
+}
+
+.cms-textarea:focus {
+  border-color: #6366f1;
+  outline: none;
+}
+
+.cms-textarea:disabled {
+  background-color: #efefef;
+  cursor: not-allowed;
+  color: #666;
+}
+
+.cms-loading {
+  text-align: center;
+  margin-top: 12px;
+  font-weight: 500;
+  color: #e07b00;
+  animation: fadeIn 0.5s ease;
+}
+
+.cms-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.cms-btn {
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cms-btn.edit {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.cms-btn.save {
+  background-color: #10b981;
+  color: white;
+}
+
+.cms-btn.reset {
+  background-color: #f97316;
+  color: white;
+}
+
+.cms-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.cms-btn:disabled {
+  background-color: #cbd5e1;
+  cursor: not-allowed;
+  color: #888;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .cms-container {
+    margin: 30px 16px;
+    padding: 20px;
+  }
+
+  .cms-title {
+    font-size: 22px;
+  }
+
+  .cms-textarea {
+    font-size: 14px;
+  }
+
+  .cms-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .cms-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Optional animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
